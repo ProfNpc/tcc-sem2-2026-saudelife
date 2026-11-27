@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 // Menu de navegação horizontal exibido em todas as páginas.
-// "Usuários" e "Pedidos" ainda não têm página: aparecem desabilitados.
+// "Pedidos" ainda não tem página: aparece desabilitado.
 export default function Menu() {
   function classeLink({ isActive }) {
     if (isActive) {
@@ -12,8 +12,7 @@ export default function Menu() {
 
   return (
     <nav className="menu">
-      <NavLink to="/produtos" className={classeLink}>Produtos</NavLink>
-      <span className="menu-item menu-item-desabilitado" title="Em breve">Usuários</span>
+      <NavLink to="/usuarios" className={classeLink}>Usuários</NavLink>
       <span className="menu-item menu-item-desabilitado" title="Em breve">Pedidos</span>
       <NavLink to="/" end className={classeLink}>Principal</NavLink>
     </nav>
