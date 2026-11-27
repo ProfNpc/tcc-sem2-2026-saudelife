@@ -178,6 +178,7 @@ h1 {
 }
 
 .formulario input,
+.formulario select,
 .formulario textarea {
   padding: 8px 10px;
   border: 1px solid #cbd5e1;
@@ -261,4 +262,17 @@ a.menu-item:hover {
 .menu-item-desabilitado {
   color: #7b8794;
   cursor: not-allowed;
+}
+
+/* Linha com o ID e a data de cadastro (tela Editar Usuário) */
+.info-usuario {
+  color: #6b7280;
+  margin: 0 0 16px;
+}
+
+/* Link com cara de botão (página inicial) */
+a.botao {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 8px;
 }
